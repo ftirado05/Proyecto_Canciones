@@ -6,6 +6,7 @@ import { CancionListar } from '../../componentes/canciones/CancionListar';
 import { CancionAdmin } from '../../componentes/canciones/CancionAdmin';
 import { CancionActualizar } from '../../componentes/canciones/CancionActualizar';
 import { NoEncontrado } from '../../componentes/contenedor/NoEncontrado';
+import { Acerca } from '../../componentes/otros/Acerca';
 
 
 export const Ruteo = ()=> {
@@ -16,7 +17,10 @@ export const Ruteo = ()=> {
             <Route path="/cancre" element={<CancionCrear />}/>
             <Route path="/canlis" element={<CancionListar />}/>
             <Route path="/canadmin" element={<CancionAdmin />}/>
-            <Route path="/canact:codigo" element={<CancionActualizar />}/>
+
+            <Route path="/canact/:codigo" element={<CancionActualizar />}/>
+
+            <Route path="/acer" element={<Acerca />}/>
             <Route path="*" element={<NoEncontrado />}/>
         </Routes>
     )
