@@ -6,9 +6,9 @@ export const Cabecera = () => {
     <>
       <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <NavLink className="navbar-brand" to="/">
             <img src={miLogo} alt="logoreact" />
-          </a>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
